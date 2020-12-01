@@ -6,13 +6,11 @@ class Polygon {
             density: 1.0,
             isStatic: false
         }
-        this.image = loadImage("polygon.png");
         this.body = Bodies.circle(x, y, radius, options);
         this.radius = radius;
         World.add(world, this.body);
     }
     display() {
-        // image(this.image, 0, 0, this.width, this.height);
         stroke("red");
         strokeWeight(8);
         ellipseMode(RADIUS);
